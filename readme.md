@@ -4,7 +4,7 @@
 2.	Install Parallel Computing Toolbox: https://www.mathworks.com/products/parallel-computing.html
 3.	Install YALMIP: https://yalmip.github.io/tutorial/installation/
 4.	Install Gurobi: https://www.gurobi.com/downloads/gurobi-optimizer-eula/
-5.	Download code: [insert link after review]
+5.	Download code: https://github.com/ChristopherDBreaux/Optimal-Control-for-Lunar-Tumbling-Robot
 6.	Add YALMIP and Gurobi to path in MAIN.m
 
 # Code Structure
