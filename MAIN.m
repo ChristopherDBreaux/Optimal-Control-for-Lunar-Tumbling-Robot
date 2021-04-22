@@ -34,19 +34,19 @@ inputs = [];
 % Kw: windup torque multiplier, unused in slowfall
 
 % Quick Test: Swingup, Slowfall, Slowstep
-% inputs = [inputs, struct('mode','swingup', 'objective','time', 'N',10, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[0; 0], 'maxT',1, 'Kw',5)];
-% inputs = [inputs, struct('mode','slowfall', 'objective','time', 'N',10, 's',0.1, 'xi',[0; 0; 0; 0], 'xf',[pi/2; 3], 'maxT',1, 'Kw',5)];
-% inputs = [inputs, struct('mode','slowstep', 'objective','time', 'N',15, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[pi/2; 3], 'maxT',1, 'Kw',5)];
+inputs = [inputs, struct('mode','swingup', 'objective','time', 'N',10, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[0; 0], 'maxT',1, 'Kw',5)];
+inputs = [inputs, struct('mode','slowfall', 'objective','time', 'N',10, 's',0.1, 'xi',[0; 0; 0; 0], 'xf',[pi/2; 3], 'maxT',1, 'Kw',5)];
+inputs = [inputs, struct('mode','slowstep', 'objective','time', 'N',15, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[pi/2; 3], 'maxT',1, 'Kw',5)];
 
 % Swing Up
-%inputs = [inputs, struct('mode','swingup', 'objective','time', 'N',10, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[0; 0], 'maxT',1, 'Kw',5)];
-%inputs = [inputs, struct('mode','swingup', 'objective','energy', 'N',10, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[0; 0], 'maxT',1, 'Kw',5)];
+% inputs = [inputs, struct('mode','swingup', 'objective','time', 'N',10, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[0; 0], 'maxT',1, 'Kw',5)];
+% inputs = [inputs, struct('mode','swingup', 'objective','energy', 'N',10, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[0; 0], 'maxT',1, 'Kw',5)];
 % inputs = [inputs, struct('mode','swingup', 'objective','time', 'N',20, 's',0.05, 'xi',[-pi/2; 0; 0; 0], 'xf',[0; 0], 'maxT',1, 'Kw',5)];
 % inputs = [inputs, struct('mode','swingup', 'objective','energy', 'N',20, 's',0.05, 'xi',[-pi/2; 0; 0; 0], 'xf',[0; 0], 'maxT',1, 'Kw',5)];
 
 % Slow Step
-%inputs = [inputs, struct('mode','slowstep', 'objective','time', 'N',13, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[pi/2; 3], 'maxT',1, 'Kw',5)];
-inputs = [inputs, struct('mode','slowstep', 'objective','energy', 'N',13, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[pi/2; 3], 'maxT',1, 'Kw',5)];
+% inputs = [inputs, struct('mode','slowstep', 'objective','time', 'N',13, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[pi/2; 3], 'maxT',1, 'Kw',5)];
+% inputs = [inputs, struct('mode','slowstep', 'objective','energy', 'N',13, 's',0.1, 'xi',[-pi/2; 0; 0; 0], 'xf',[pi/2; 3], 'maxT',1, 'Kw',5)];
 
 % Slow fall
 % inputs = [inputs, struct('mode','slowfall', 'objective','time', 'N',40, 's',0.05, 'xi',[0; 0; 0; 0], 'xf',[pi/2; 2], 'maxT',1, 'Kw',5)];

@@ -28,7 +28,7 @@ function slowfall_opt(input, folder_name, thread)
         if strcmp(input.objective,string('time'))
             objective = 1;
         elseif strcmp(input.objective,string('energy'))
-            objective = objective + norm(uT(k)*uT(k), 1);
+            objective = objective + abs(uT(k)) %norm(uT(k)*uT(k), 1);
         end
 
         % Dynamic Model
